@@ -9,11 +9,15 @@
         <Image Source="LogoCorreios.png" x:Name="LOGO"/>
         <Entry Placeholder="Digite o CEP" x:Name="CEP" PlaceholderColor="#FFBF00" BackgroundColor="#FFFFFF"/>
         <Button Text="Buscar CEP" x:Name="BOTAO" TextColor="#FFFFFF" BackgroundColor="#00416B"/>
-        
+        <Grid x:Name="loadingOverlay" IsVisible="true">
+            
+            <ActivityIndicator IsRunning="true" />
+        </Grid>
 
         <Label  x:Name="RESULTADO" 
            HorizontalOptions="Center"
            VerticalOptions="Center" />
+
     </StackLayout>
 
 </ContentPage>
